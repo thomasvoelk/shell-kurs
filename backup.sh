@@ -1,8 +1,10 @@
 #! /bin/bash
 
 # Directories und Files definieren
-backupdir="/tmp/backup/"
-logdir="/tmp/backuplog/"
+#backupdir="/tmp/backup/"
+#logdir="/tmp/backuplog/"
+backupdir={$1}
+logdir={$2}
 current_date=$(date +%F)
 log="$logdir/Backup-Log_$current_date"
 errorlog="$logdir/Bakup-Fehler_$current_date"
