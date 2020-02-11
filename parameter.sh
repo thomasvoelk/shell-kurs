@@ -14,8 +14,11 @@ if [ ${param_count} -eq 0 ]; then
 fi
 
 case ${input_weekday} in
-	'montag'|'dienstag'|'mittwoch'|'donnerstag'|'freitag') gotta_work="Du musst leider arbeiten :(";;
-	'samstag'|'sonntag') gotta_work="Du kannst Party machen :(";;
-	*) gotta_work="Du bist doof...";;	
+	'montag'|'dienstag'|'mittwoch'|'donnerstag'|'freitag')
+		gotta_work="Du musst leider arbeiten :(";;
+	'samstag'|'sonntag')
+		gotta_work="Du kannst Party machen :(";;
+	*) 
+		gotta_work="Du bist doof...";;	
 esac
 echo ${gotta_work}
