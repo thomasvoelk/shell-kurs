@@ -15,8 +15,7 @@ make_name() {
 	input_filename=${1}
 	base_name=$(basename "${input_filename}")
 	dir_name=$(dirname "${input_filename}")
-	result=$dir_name/$base_name
+	echo $dir_name/$base_name
 }
 
-make_name "${1}"
-echo ${result}
+echo $(make_name "${1}")
